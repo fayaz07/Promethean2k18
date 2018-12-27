@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:title="CSE"
+            android:id="@+id/cse_events_list"/>
+        <item android:title="ECE"
+            android:id="@+id/ece_events_list"/>
+        <item android:title="IT"
+            android:id="@+id/it_events_list"/>
+        <item android:title="CHE"
+            android:id="@+id/che_events_list"/>
+        <item android:title="EEE"
+            android:id="@+id/eee_events_list"/>
+        <item android:title="MEC"
+            android:id="@+id/mec_events_list"/>
+        <item android:title="CIV"
+            android:id="@+id/civ_events_list"/>
+        <item android:title="BME"
+            android:id="@+id/bme_events_list"/>
+        <item android:title="PHE"
+            android:id="@+id/phe_events_list"/>
+        <item android:title="MBA"
+            android:id="@+id/mba_events_list"/>
+    </group>
+</menu>

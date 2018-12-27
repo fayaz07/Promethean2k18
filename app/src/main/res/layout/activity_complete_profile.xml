@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/complete_profile_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_signup.CompleteProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal">
+                <!-- #f4356b #fc7e3f  f7322b-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/profile_background_gradient"
+
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="18dp"
+                        android:text="Complete your Profile"
+                        android:textColor="#fff"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:foregroundGravity="center_vertical"
+                    android:src="@drawable/personiconblue" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:contentPadding="3dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="280dp"
+                    android:layout_height="52dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/nameCP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Full Name"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:contentPadding="3dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="280dp"
+                    android:layout_height="52dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/emailCP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:contentPadding="3dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="280dp"
+                    android:layout_height="52dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/phoneCP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Phone"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:contentPadding="3dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="280dp"
+                    android:layout_height="52dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/collegeCP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="College name and State"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:contentPadding="3dp">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="52dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select year of study" />
+
+                    <Spinner
+                        android:id="@+id/year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/year">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:contentPadding="3dp">
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="52dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select department" />
+
+                    <Spinner
+                        android:id="@+id/dept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/dept"></Spinner>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp"
+                app:contentPadding="3dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="280dp"
+                    android:layout_height="52dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/rollCP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Roll No"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/proceedCP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="@android:color/holo_blue_light"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="3dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:text="Proceed"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20sp" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

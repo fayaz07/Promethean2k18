@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/show_my_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/show_my_registered_eents"
+            android:icon="@drawable/person_regevents"
+            android:title="Registered Events" />
+        <item
+            android:id="@+id/how_it_works"
+            android:icon="@drawable/ic_slideshow_black_24dp"
+            android:title="How our app Works" />
+        <item
+            android:id="@+id/log_me_out"
+            android:icon="@drawable/ic_log_out_black_24dp"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/share_app"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share our app" />
+            <item
+                android:id="@+id/college_buses"
+                android:icon="@drawable/ic_directions_bus_black_24dp"
+                android:title="Our College buses" />
+            <item
+                android:id="@+id/communicate_with_us"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>

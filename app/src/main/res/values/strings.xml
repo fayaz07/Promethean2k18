@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Promethean 2k18</string>
+    <string name="caption">Into the Imagination</string>
+    <string name="server_client_id">814507612991-7hd44cjvhno3fh60g4jsje4d7ltuk1il.apps.googleusercontent.com</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Dr.V.Murali Krishna HOD, MECH
+        Dr.J.Sarada Prasad, HOD, CHE
+        Dr.P.Vishnu, HOD, PHE
+        Dr.I.Nageshwara Rao, HOD, MBA -->
+
+
+    <string name="About"><b><u><h1>\nABOUT PROMETHEAN:</h1></u></b>\nPromethean is BVRIT Annual National Level Technical Symposium With The Motive of "Into the imagination". Promethean Provides A Platform To All Those Innovative And Ingenious Techies To Showcase Their Talents And Broaden Their Horizons. Each Year, Thousands of Students From Along The Country Come To Sojourn This Technical Extravaganza. Promethean 2k18 Returns With A Bang This Year All Set To Re-Write History. With A Mix of Spice For The Grey Cells And For The Heart, Promethean Sets Out To Be A Trail-Blazer In Hosting A Roller-Coaster Ride For Those With An Appetite For Science. For We Believe, "Knowledge is Worth Spreading".
+        \n\n<b>Chief Patron:</b>\n Sri K.V. Vishnu Raju\n Chairman S.V.E.S\n
+        <b>Patrons:</b>\nSri R.Ravichandran, Vice Chairman S.V.E.S\n
+        Sri K.Aditya Vissam, Secretary S.V.E.S\n Dr. S. Sunderrajan, Director S.V.E.S\n
+        <b>President:</b>\nDr.Y.Krishna Reddy - Principal\n\n
+        <b>Chief Advisor:</b>\nK.Srinivas Reddy - Dean\n\n
+        <b>Convenor:</b>\nDr.K.Rayudu, HOD, EEE.\n\n
+        <b>Co-Conveners:</b>\nDr.G.Radhika HOD, CHE\nDr.P.Vishnu, HOD, PHE\nDr.I.Nageshwara Rao, HOD, MBA
+        \n<b>Faculty Coordinators:</b>\nDr.G.Srinivas, CHE - Assistant Professor\nDr.P.Senthil Kumar, MECH - Professor\nMs.K.Sridevi, MBA - Assistant Professor\nMr.Sai Siddarth, PHE - Assistant Professor\nMr.J.Ramesh Babu, CSE - Associate Professor\nMr.M.Amarender Reddy, IT - Assistant Professor\nMr.J.Yeshvant Reddy, ECE - Assistant Professor\nMr.K.Rama Krishna, EEE - Associate Professor\nMrs.A.Sri Latha, Bio Medical - Assistant Professor\nDr.B.Mrunalini, BS and H - Associate Professor</string>
+
+    <string-array name="year">
+        <item>I Year</item>
+        <item>II Year</item>
+        <item>III Year</item>
+        <item>IV Year</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="dept">
+        <item>CSE</item>
+        <item>CHE</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>MEC</item>
+        <item>PHE</item>
+        <item>BME</item>
+        <item>CIV</item>
+        <item>MBA</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_maps__college">Map</string>
+    <string name="title_activity_home_final">Home_final</string>
+
+
+    <string-array name="examples">
+        <item>Hello guys</item>
+        <item>Welcome to Promethean 2k18</item>
+        <item>A National Level Technical Synopsium</item>
+    </string-array>
+
+</resources>

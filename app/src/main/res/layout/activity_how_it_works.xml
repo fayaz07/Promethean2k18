@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.How_it_works">
+
+    <TextView
+        android:id="@+id/getHelpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:text="Get Help" />
+
+    <Button
+        android:id="@+id/videoLink"
+        android:layout_width="300dp"
+        android:text="find how our app works"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:background="@color/colorAccent"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/howtoregisterandpay"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp"
+        android:background="@color/colorAccent"
+        android:text="Find how to register and pay"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

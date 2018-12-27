@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#eaeaea"
+    android:id="@+id/parentlayoutMainActivity"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="221dp"
+                android:layout_height="198dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#000"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/caption"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:id="@+id/continue_with_phone_ll"
+                android:layout_width="256dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="50dp"
+                android:background="#66BB6A">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_local_phone_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="Sign in with phone"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/continue_with_gmail"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/continue_with_gmail" />
+
+            <ImageView
+                android:id="@+id/continue_with_email"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/continue_with_email" />
+
+            <Button
+                android:id="@+id/termsandconditions"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:text="By registering, you accept our Terms and conditions, click to view"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

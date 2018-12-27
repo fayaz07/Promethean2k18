@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView_Home_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.Home_final"
+    tools:showIn="@layout/app_bar_home_final">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Promethean header -->
+        <com.dd.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="7dp"
+            app:sl_cornerRadius="56dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="#aa76f5f5"
+            app:sl_shadowRadius="6dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/headers_promethean">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="Promethean 2k18"
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:background="@drawable/corners_promethean_header">
+
+                        <com.tomer.fadingtextview.FadingTextView
+                            android:id="@+id/fadingtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="serif"
+                            android:textColor="#818181"
+                            android:gravity="center_horizontal"
+                            android:textSize="18dp"
+                            app:texts="@array/examples"
+                            app:timeout="3000" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/fadingtext"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#1976d2">
+
+                            <Button
+                                android:id="@+id/open_about_promethean"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:onClick="onClick"
+                                android:text="Know More"
+                                android:textColor="#fff" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </com.dd.ShadowLayout>
+
+        <!-- Featured Events -->
+        <com.dd.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="7dp"
+            app:sl_cornerRadius="56dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="#aa76f5f5"
+            app:sl_shadowRadius="6dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/headers_promethean">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="Featured Events"
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:background="@drawable/corners_promethean_header">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fitsSystemWindows="true"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="2dp"
+                            app:columnCount="2"
+                            app:rowCount="2">
+
+                            <ImageView
+                                android:id="@+id/hacathon_n"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/hackathon"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/poster_presentation_n"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/poster_presentation"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/project_expo_n"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/project_expo"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/ideation_n"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/ideation"
+                                android:visibility="gone" />
+
+                        </android.support.v7.widget.GridLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </com.dd.ShadowLayout>
+
+        <!-- Events by departments -->
+        <com.dd.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="7dp"
+            app:sl_cornerRadius="56dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="#aa76f5f5"
+            app:sl_shadowRadius="6dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/headers_promethean">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="Events by departments"
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:background="@drawable/corners_promethean_header">
+
+                        <ProgressBar
+                            android:id="@+id/loadingProgressBarDepartmentalEvents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="100dp" />
+
+                        <TextView
+                            android:id="@+id/show_no_internet_events_by_departments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="No Internet Connection"
+                            android:textColor="#000"
+                            android:textSize="17dp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView_events_by_departments"
+                            android:layout_width="match_parent"
+                            android:layout_height="260dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/recyclerView_events_by_departments"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#1976d2">
+
+                            <Button
+                                android:id="@+id/open_all_events"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:onClick="onClick"
+                                android:text="View all events"
+                                android:textColor="#fff" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </com.dd.ShadowLayout>
+
+        <!-- Fun Events -->
+        <com.dd.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="7dp"
+            app:sl_cornerRadius="56dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="#aa76f5f5"
+            app:sl_shadowRadius="6dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/headers_promethean">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="Non Technical Events"
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:background="@drawable/corners_promethean_header">
+
+                        <ProgressBar
+                            android:id="@+id/loadingProgressBarFunEvents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="100dp" />
+
+                        <TextView
+                            android:layout_below="@id/loadingProgressBarFunEvents"
+                            android:id="@+id/show_no_internet_events_fun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="No internet connection"
+                            android:textColor="#000" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView_events_fun"
+                            android:layout_width="match_parent"
+                            android:layout_height="260dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <RelativeLayout
+                            android:layout_below="@id/recyclerView_events_fun"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#1976d2">
+
+                            <Button
+                                android:id="@+id/open_all_fun_events"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:onClick="onClick"
+                                android:text="View all events"
+                                android:textColor="#fff" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </com.dd.ShadowLayout>
+
+        <!-- App & Events -->
+        <com.dd.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="7dp"
+            app:sl_cornerRadius="56dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="#aa76f5f5"
+            app:sl_shadowRadius="6dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/headers_promethean">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="About Us"
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:background="@drawable/corners_promethean_header">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fitsSystemWindows="true"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="2dp"
+                            app:columnCount="3"
+                            app:rowCount="3">
+
+                            <ImageView
+                                android:id="@+id/council"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="18dp"
+                                android:src="@drawable/council"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/faculty_coordinators_n"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="18dp"
+                                android:src="@drawable/faculty_coordinators"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/team_promethean_n"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="18dp"
+                                android:src="@drawable/team"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/student_coordinators_n"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/student_coordinators"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/about_techteam_n"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="18dp"
+                                android:src="@drawable/tech_team"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/college_map_n"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="18dp"
+                                android:src="@drawable/college_map"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/notifications_n"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="18dp"
+                                android:src="@drawable/notifications_icon"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/sponsors_n"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/sponsors"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/report_bug_n"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/report_bug"
+                                android:visibility="gone" />
+
+                        </android.support.v7.widget.GridLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </com.dd.ShadowLayout>
+
+    </LinearLayout>
+
+</ScrollView>

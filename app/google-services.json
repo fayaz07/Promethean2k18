@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "814507612991",
+    "firebase_url": "https://promethean2k18-66ffe.firebaseio.com",
+    "project_id": "promethean2k18-66ffe",
+    "storage_bucket": "promethean2k18-66ffe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814507612991:android:67a04e2a2fd7d80b",
+        "android_client_info": {
+          "package_name": "promethean2k18.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814507612991-6db9lkekjc0u6tvai414s219gjs71u87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "promethean2k18.com",
+            "certificate_hash": "8689c90a277c5a3d1408f01c3cbe7107feead4c6"
+          }
+        },
+        {
+          "client_id": "814507612991-7hd44cjvhno3fh60g4jsje4d7ltuk1il.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdmOZR90hXYT1dWXAXLgDAWRgR6j-Hodw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814507612991-7hd44cjvhno3fh60g4jsje4d7ltuk1il.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
