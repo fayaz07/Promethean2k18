@@ -2,7 +2,7 @@
 Official app for National Level Technical Symposium by BV Raju Institute of Technology, Narsapur, Telangana
 
 
-[Get the app](https://play.google.com/store/apps/details?id=promethean2k18.com)
+[Get the app](https://play.google.com/store/apps/details?id=promethean2k18.com) | [Screenshots](https://github.com/fayaz07/Promethean2k18/tree/master/screenshots)
 
 > App Working Demo
 
